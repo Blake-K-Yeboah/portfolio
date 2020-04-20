@@ -28,7 +28,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/35d5bb47e0.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
@@ -56,25 +57,25 @@
 
                 <li class="nav-item">
 
-                    <a href="#" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link">Skills</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                    <a href="#" class="nav-link font-light">About</a>
+                    <a href="#about" class="nav-link font-light">About</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                    <a href="#" class="nav-link font-light">Resume</a>
+                    <a href="#resume" class="nav-link font-light">Resume</a>
 
                 </li>
 
@@ -221,7 +222,7 @@
 
         </section>
 
-        <hr class="divider">
+        <hr class="divider" data-aos="fade-up">
 
         <section class="project" data-aos="fade-left">
 
@@ -292,7 +293,7 @@
 
         </section>
 
-        <hr class="divider">
+        <hr class="divider" data-aos="fade-up">
 
         <section class="project" data-aos="fade-right">
 
@@ -364,6 +365,323 @@
         </section>
 
     </section>
+
+    <section class="section skills grey" id="skills">
+
+        <div data-aos="zoom-in">
+
+            <h1 class="section-title">Skills</h1>
+
+            <h3 class="section-sub-title">View some of the skills I have</h3>
+
+        </div>
+
+        <section class="skills-container" data-aos="fade-down">
+
+            <section class="skill-group">
+
+                <i class="fas fa-laptop-code fa-3x icon"></i>
+
+                <div class="content">
+
+                    <h1 class="skill-title">Front End</h1>
+
+                    <ul class="skills">
+
+                        <div class="row">
+
+                            <li class="skill">
+                                HTML
+                            </li>
+
+                            <li class="skill">
+                                CSS
+                            </li>
+
+                            <li class="skill">
+                                JavaScript
+                            </li>
+
+                        </div>
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Sass
+                            </li>
+
+                            <li class="skill">
+                                React
+                            </li>
+
+                            <li class="skill">
+                                MobX
+                            </li>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="skill-group">
+
+                <i class="fas fa-server fa-3x icon"></i>
+
+                <div class="content">
+
+                    <h1 class="skill-title">Back End</h1>
+
+                    <ul class="skills">
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Node
+                            </li>
+
+                            <li class="skill">
+                                Express
+                            </li>
+
+                            <li class="skill">
+                                MongoDB
+                            </li>
+
+                        </div>
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Firebase
+                            </li>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="skill-group">
+
+                <i class="fas fa-tools fa-3x icon"></i>
+
+                <div class="content">
+
+                    <h1 class="skill-title">Tools</h1>
+
+                    <ul class="skills">
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Visual Studio Code
+                            </li>
+
+                            <li class="skill">
+                                Git
+                            </li>
+
+                            <li class="skill">
+                                Yarn
+                            </li>
+
+                        </div>
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Chrome Dev Tools
+                            </li>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="skill-group">
+
+                <i class="fas fa-paint-brush fa-3x icon"></i>
+
+                <div class="content">
+
+                    <h1 class="skill-title">Design</h1>
+
+                    <ul class="skills">
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Adobe XD
+                            </li>
+
+                            <li class="skill">
+                                UI & UX
+                            </li>
+
+                            <li class="skill">
+                                Wireframing
+                            </li>
+
+                        </div>
+
+                        <div class="row">
+
+                            <li class="skill">
+                                Prototyping
+                            </li>
+
+                        </div>
+
+                    </ul>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+    <section class="section contact" id="contact" data-aos="zoom-in">
+
+        <div>
+
+            <h1 class="section-title">Get in Touch</h1>
+
+            <h3 class="section-sub-title">Fill out the following form to contact me</h3>
+
+        </div>
+
+        <form class="contact-form">
+
+            <div class="form-group form-grid">
+
+                <div class="input-container">
+
+                    <label for="firstname">First Name</label>
+
+                    <input class="input" type="text" placeholder="John" name="firstname" id="firstname" />
+
+                </div>
+
+                <div class="input-container">
+
+                    <label for="lastname">Last Name</label>
+
+                    <input class="input" type="text" placeholder="Doe" name="lastname" id="lastname" />
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="input-container">
+
+                    <label for="email">Email</label>
+
+                    <input class="input" type="text" placeholder="johndoe@gmail.com" name="email" id="email" />
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="input-container">
+
+                    <label for="messagel">Message</label>
+
+                    <textarea class="input textarea" type="text" placeholder="Hello" name="message" id="message"
+                        rows="15"></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <button type="submit" class="btn primary">
+
+                    <i class="far fa-envelope icon"></i>
+
+                    Send
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <section class="section grey about" id="about">
+
+        <div data-aos="zoom-in">
+
+            <h1 class="section-title">About Me</h1>
+
+            <h3 class="section-sub-title">Learn more about myself</h3>
+
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+
+            <img src="img/me.png" class="about-img" alt="Blake Yeboah" />
+
+            <div class="text">
+
+                <p class="paragraph">Hi, My name is Blake Yeboah and I'm a full stack developer. I enjoy designing and
+                    programming web applications that exceed expectations and meet their requirements. I've been
+                    developing personal applications for over a year and have developed a strong passion of the software
+                    development industry. </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section resume" data-aos="zoom-in" id="resume">
+
+        <h1 class="section-title">Resume</h1>
+
+        <h3 class="section-sub-title">Interested in working with me? Download my resume below</h3>
+
+        <a href="/resumes.pdf" class="btn primary" download>
+
+            <i class="fas fa-file-download icon"></i>
+
+            Download Resume
+
+        </a>
+    </section>
+
+    <footer class="footer">
+
+        <p class="footer-text">Copyright &copy; 2020 Blake Yeboah</p>
+
+        <ul class="social-icons">
+
+            <li class="icon-container">
+
+                <a class="fab fa-linkedin fa-2x icon" href="https://www.linkedin.com/in/blake-yeboah-ba5715192/"
+                    target="_blank"></a>
+
+            </li>
+
+            <li class="icon-container">
+
+                <a class="fab fa-github fa-2x icon" href="https://github.com/Blake-K-Yeboah" target="_blank"></a>
+
+            </li>
+
+        </ul>
+    </footer>
 
     <!-- AOS Script-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
