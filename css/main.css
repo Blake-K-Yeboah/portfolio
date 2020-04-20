@@ -51,6 +51,7 @@ body {
           transform: translateY(-50%);
   -webkit-transition: .75s ease-in-out;
   transition: .75s ease-in-out;
+  cursor: pointer;
 }
 
 .header .nav .nav-brand .nav-img {

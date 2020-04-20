@@ -64,6 +64,7 @@ body {
             top:50%;
             transform:translateY(-50%);
             @include longTransition();
+            cursor: pointer;
 
             .nav-img {
                 width:50px;
