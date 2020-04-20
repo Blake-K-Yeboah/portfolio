@@ -23,4 +23,20 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('contract');
 
     }
-})
+});
+
+const codeButtons = document.querySelectorAll('.code-btn');
+
+const redirect = (link) => {
+    window.open(link, '_blank');
+}
+
+codeButtons.forEach(button => button.addEventListener('click', () => {
+    redirect(button.getAttribute('data-github'));
+}));
+
+const previewButtons = document.querySelectorAll('.preview-btn');
+
+previewButtons.forEach(button => button.addEventListener('click', () => {
+    redirect(button.getAttribute('data-website'));
+}));
