@@ -7,6 +7,7 @@ $lightGrey: #F8F8F8;
 $mainGrey: #F2F2F2;
 $textDark: #4B4B4B; 
 $titleSize: 2.5rem;
+$smallTitleSize: 2rem;
 
 // Mixins
 
@@ -333,7 +334,7 @@ body {
     width: 80vw;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5vw;
+    gap: 5vw;
     margin-top: 75px;
 
     .skill-group  {
@@ -528,6 +529,308 @@ body {
                 &:hover {
                     color: $primaryColor;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1638px) {
+
+    .skills-container {
+
+        .skill-group {
+            width: 85%;
+            margin-left: 7.5%;
+
+            .icon {
+                margin-top: 65%;
+            }
+        }
+
+    }
+
+    .project:first-of-type {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1512px) {
+
+    .skills-container {
+        gap: 3vw;
+
+        .skill-group {
+            width: 92.5%;
+            margin-left: 3.75%;
+
+            .icon {
+                margin-top: 70%;
+            }
+        }
+    }
+
+    .header .header-content {
+        
+        .paragraph {
+            width: 70%;
+        }
+
+    }
+
+    .project .content.right {
+
+        .skill-list {
+            margin-left: 27.5%;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1392px) {
+
+    .header .header-content {
+        .main-text {
+            font-size: $smallTitleSize;
+        }
+
+        .paragraph {
+            font-size: 1rem;
+        }
+    }
+
+    .section .section-title {
+        font-size: $smallTitleSize;
+    }
+
+    .section .section-sub-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: .75rem;
+        padding: 10px 20px;
+    }
+
+    .project .content {
+
+        .title {
+            font-size: $smallTitleSize;
+        }
+
+        .description {
+            font-size: 1rem;
+        }
+
+        .skills {
+
+            .sub-title {
+                font-size: 1.25rem
+            }
+
+            .skill-list .skill {
+
+                .checkmark {
+                    width: 26px;
+                }
+
+                .skill-name {
+                    font-size: 1rem;
+                    left: 35px;
+                    top: -5px;
+                }
+            }
+        }   
+
+    }
+
+    .project .content.right {
+        
+        .skill-list {
+            margin-left: 31%;
+        }
+
+    }
+
+    .contact-form {
+        
+        .form-group .btn {
+            padding: 10px 30px;
+        }
+
+    }
+
+    .resume {
+        height: 350px;
+    }
+
+    .about-content {
+
+        .text .paragraph {
+            font-size: 1rem;
+        }
+    }
+
+    .skills-container {
+
+        .skill-group {
+            width: 90%;
+            margin-left: 5%;
+            height: 125px;
+
+            .icon {
+                margin-top: 60%;
+            }
+
+            .content {
+
+                .skill-title {
+                    font-size: 1.1rem;
+                }
+
+                .skills .row .skill {
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1076px) {
+
+    .header .nav {
+        padding: 0 5vw;
+
+        .nav-list {
+            right: 5vw;
+
+            .nav-item .nav-link {
+                font-size: 1rem;
+            }
+        }
+
+        .nav-brand {
+            top:45%;
+            
+            .nav-brand-text {
+                font-size: 1.5rem;
+                left: 40px;
+            }
+
+            .nav-img {
+                width: 32px;
+                top: 5px;
+            }
+        }
+    }
+
+    .header .header-content {
+        width: 90vw;
+
+        .paragraph {
+            width: 60%;
+        }
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        height: 80vh;
+
+        &.right {
+            .project-img {
+                top: 0;
+                transform:translateX(-50%);
+                margin-top: 50px;
+            }
+
+            .content.right {
+                width: 80%;
+                margin-left:10%;
+                text-align:center;
+
+                .description {
+                    margin-left: 10%;
+                }
+
+                .skill-list {
+                    position: relative;
+                    left:50%;
+                    transform: translateX(-50%);
+                    margin-left: 0;
+                    width: 50%;
+                }
+            }
+        }
+
+        .content {
+            width: 80%;
+            margin-left:10%;
+            text-align:center;
+
+            .description {
+                margin-left: 10%;
+            }
+
+            .skill-list {
+                position: relative;
+                left:50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &:last-of-type {
+            .content .skill-list {
+                width: 50%;
+                text-align:left;
+            }
+        }
+    }
+
+    .skills-container .skill-group {
+        grid-template-columns: 1fr;
+        height: 100%;
+        padding-bottom: 1.5em;
+
+        .icon {
+            margin-top: 1em;
+            width: 48px;
+            height: 48px
+        }
+
+        .content {
+
+            .skill-title {
+                text-align:center;
+                padding-bottom: 1em;
+            }
+
+            .skills {
+                width: 40%;
+                margin-left:50%;
+                transform: translateX(-50%);
+
+                .row {
+                    display: block; 
+
+                    &:first-of-type {
+                        margin-bottom: .75em;
+                    }
+
+                    .skill {
+                        padding: .5em 0;
+                        width: 100%;
+                        border-radius: 20px;
+                        text-align:center;
+
+                        &:not(:first-of-type) {
+                            margin-left: 0;
+                            margin-top: 1em;
+                        }
+                    }
+                }
+            }
+
+            &.special {
+                margin-top: -50px;
             }
         }
     }
