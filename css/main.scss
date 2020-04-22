@@ -740,6 +740,7 @@ body {
                 top: 0;
                 transform:translateX(-50%);
                 margin-top: 50px;
+                grid-row: 1;
             }
 
             .content.right {
@@ -833,5 +834,200 @@ body {
                 margin-top: -50px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .about-content {
+        grid-template-columns: 1fr;
+
+        .about-img {
+            width:20%;
+            left:50%;
+            margin-bottom: 2em;
+        }
+
+        .text {
+            width: 70%;
+            margin-left: 15%;
+
+            .paragraph {
+                text-align:center;
+            }
+        }
+
+    }
+
+    .footer {
+
+        .footer-text {
+            font-size: 1rem;
+            left: 10vw;
+        }
+
+        .social-icons {
+            right: 10vw;
+        }
+    }
+
+    .contact-form {
+        width:75%;
+    }
+
+    .project:first-of-type .content .skills {
+
+        .skill-list {
+            
+            .skill {
+                
+                .skill-name {
+                    font-size: .85rem;
+                    left: 15px;
+                    top: -5px;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .header {
+
+        .nav {
+
+            .nav-list {
+                display: none;
+            }
+    
+            .nav-brand {
+                position: absolute;
+                left:47.5%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.contract {
+                .nav-brand {
+                    top: 60%;
+                }
+            }
+        }
+
+        .header-content {
+            .main-text {
+                width: 300px;
+                position:relative;
+                left:50%;
+                transform: translateX(-50%);
+                margin-bottom: 1em;
+            }
+
+            .paragraph {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    .project {
+
+        .content .skills .skill-list {
+            width: 100px;
+            grid-template-columns: 1fr;
+            position: relative;
+            left:50%;
+            transform:translateX(-50%);
+
+            .skill .skill-name {
+                text-align:center;
+            }
+        }
+
+        &:first-of-type {
+            height: 110vh;
+        }
+
+        .content.right {
+            margin-left: 0;
+            width: 100px;
+
+            .skills .skill-list {
+                position: relative;
+                left:50%;
+                transform:translateX(-50%);
+                text-align:center;
+                width: 100px;
+                margin-left: 0;
+
+                .skill .skill-name {
+                    font-size: .85rem;
+                    left: 15px;
+                    top: -5px;
+                }
+            }
+    
+        }
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+
+        .skill-group {
+            width: 50vw;
+            margin: 0 auto;
+
+            .content.special {
+                margin-top: 0;
+            }
+
+            .icon {
+                margin-top: 1.25em;
+            }
+        }
+    }
+
+    .contact-form {
+
+        .form-group.form-grid {
+            grid-template-columns: 1fr;
+            row-gap: 2.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .footer {
+        height: 150px;
+
+        .footer-text {
+            top: 40px;
+            left:50%;
+            transform: translateX(-50%);
+            font-size: .75rem;
+        }
+
+        .social-icons {
+            top: 85px;
+            right: 50%;
+            transform: translateX(50%);
+
+            .icon-container {
+                .icon {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .skills-container {
+        
+        .skill-group {
+            width: 70vw;
+        }
+    }
+
+    .about-content .about-img {
+        width: 40vw;
     }
 }
