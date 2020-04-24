@@ -339,7 +339,7 @@ body {
 
     .skill-group  {
         background: #fff;
-        height: 150px;
+        height: 175px;
         width: 75%;
         margin-left: 12.5%;
         border-radius: 20px;
@@ -359,7 +359,7 @@ body {
             .skill-title {
                 font-size: 1.4rem;
                 color: $textDark;
-                margin-bottom: 15px;
+                margin: 10px 0 25px 0;
             }
 
             .skills {
@@ -1035,5 +1035,37 @@ body {
 @media screen and (max-height: 770px) {
     .project {
         height: 110vh;
+    }
+}
+
+@media screen and (min-width: 2552px) {
+    .skills-container {
+        
+        .skill-group {
+            
+            .icon {
+                margin-top: 47.5%;
+            }
+        }
+    }
+
+    .about-content .about-img {
+        width: 12.5vw;
+        left: 65%;
+    }
+
+    .about-content .paragraph {
+        width: 70%;
+    }
+
+    .resume {
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1642px) {
+    .skills-container .skill-group .icon {
+        width: 48px;
+        height: 48px;
     }
 }
