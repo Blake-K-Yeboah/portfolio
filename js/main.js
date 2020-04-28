@@ -14,13 +14,17 @@ window.addEventListener('scroll', () => {
 
     const navbar = document.querySelector('#navbar');
 
-    if (scrollTop >= 100) {
+    if (window.innerWidth > 728) {
 
-        navbar.classList.add('contract');
+        if (scrollTop >= 100) {
 
-    } else {
+            navbar.classList.add('contract');
 
-        navbar.classList.remove('contract');
+        } else {
+
+            navbar.classList.remove('contract');
+
+        }
 
     }
 });
