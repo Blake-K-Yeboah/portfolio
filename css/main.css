@@ -19,6 +19,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
@@ -838,6 +842,9 @@ body {
   .header .nav.contract .nav-brand {
     top: 60%;
   }
+  .header .header-content {
+    margin-top: -60px;
+  }
   .header .header-content .main-text {
     width: 300px;
     position: relative;
@@ -930,11 +937,20 @@ body {
   .about-content .about-img {
     width: 40vw;
   }
+  .project {
+    height: 125vh;
+  }
+  .project .content .btn-group {
+    width: 67.5vw;
+  }
+  .project:first-of-type {
+    height: 130vh;
+  }
 }
 
 @media screen and (max-height: 770px) {
   .project {
-    height: 110vh;
+    height: 120vh;
   }
 }
 

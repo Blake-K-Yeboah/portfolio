@@ -38,6 +38,10 @@ $smallTitleSize: 2rem;
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -916,6 +920,8 @@ body {
         }
 
         .header-content {
+            margin-top: -60px;
+
             .main-text {
                 width: 300px;
                 position:relative;
@@ -1031,11 +1037,24 @@ body {
     .about-content .about-img {
         width: 40vw;
     }
+
+    .project {
+        height: 125vh;
+
+        .content .btn-group {
+            width: 67.5vw;
+        }
+
+        &:first-of-type {
+            height: 130vh;
+        }
+    }
+    
 }
 
 @media screen and (max-height: 770px) {
     .project {
-        height: 110vh;
+        height: 120vh;
     }
 }
 
