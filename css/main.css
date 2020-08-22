@@ -670,6 +670,7 @@ body {
   }
   .skills-container .skill-group .content .skill-title {
     font-size: 1.1rem;
+    margin: 5px 0px 15px 0px;
   }
   .skills-container .skill-group .content .skills .row .skill {
     font-size: .75rem;
