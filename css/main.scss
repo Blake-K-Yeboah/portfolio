@@ -399,6 +399,34 @@ body {
     transform:translateX(-50%);
     margin-top: 50px;
 
+    .alert {
+        background: #d00;
+        width:100%;
+        height: 50px;
+        border-radius: 5px;
+        opacity: 0.75;
+        margin-bottom: 2.5em;
+        display: none;
+        position:relative;
+
+        .alert-text {
+            color: #fff;
+            font-size: 1rem;
+            line-height: 50px;
+            margin-left: 25px;
+        }
+
+        .close {
+            color: #fff;
+            font-size: 1.5rem;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+
     .form-group {
         margin-bottom: 2.5em;
         
