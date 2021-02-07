@@ -201,6 +201,11 @@ body {
         box-shadow: 0 0 10px rgba(0,0,0,0.35);
         outline: none;
     }
+
+    &:disabled {
+        border:1px solid lightgrey;
+        cursor: default
+    }
 }
 
 .section {

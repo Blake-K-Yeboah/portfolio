@@ -195,6 +195,11 @@ body {
   outline: none;
 }
 
+.btn:disabled {
+  border: 1px solid lightgrey;
+  cursor: default;
+}
+
 .section {
   padding: 10vh 10vw;
 }
