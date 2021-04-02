@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,25 +6,79 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+  background-color: #0D1422;
 }
 
 .header {
   height: 100vh;
   width: 100vw;
-  background: url("../img/Background.jpg") bottom/cover;
+  background: url("../img/Background.jpg") bottom/cover fixed;
 }
 
-.header::before {
-  content: '';
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.35);
-  position: absolute;
-  top: 0;
-  left: 0;
+.header .large-title {
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 30vh;
+  margin-bottom: .125em;
+}
+
+.header .content {
+  width: 32.5vw;
+  color: #C4C4C4;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+.header .content .light {
+  color: #fff;
+}
+
+.header .divider {
+  width: 27.5vw;
+  background-color: #fff;
+  opacity: .17;
+  height: 1.5px;
+  margin: 2em auto;
+}
+
+.header .social-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .social-icon-list .social-icon-container {
+  margin: 0 .7rem;
+}
+
+.header .social-icon-list .social-icon-container .icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.header .social-icon-list .social-icon-container .icon:hover {
+  color: #FF347F;
 }
 
 .navbar {
@@ -39,10 +94,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
-.navbar.scrolled {
-  background: #192641;
+.navbar.contract {
+  background: #0D1422;
   height: 100px;
 }
 
@@ -58,12 +115,14 @@ body {
 }
 
 .navbar .nav-list .nav-item .nav-link {
-  color: #eee;
+  color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 1px;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
 }
 
 .navbar .nav-list .nav-item .nav-link:hover {

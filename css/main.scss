@@ -1,5 +1,9 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
+
 // Variables
-$darkBg: #192641;
+$darkBg: #0D1422;
+$lightGrey: #C4C4C4;
 $primary: #FF347F;
 
 // Base Styles
@@ -9,25 +13,72 @@ $primary: #FF347F;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
+    background-color: $darkBg;
 }
 
 // Header Styles
 .header {
     height:100vh;
     width:100vw;
-    background: url('../img/Background.jpg') bottom/cover;
+    background: url('../img/Background.jpg') bottom/cover fixed;
 
-    &::before {
-        content:'';
-        width:100vw;
-        height:100vh;
-        background:rgba(0,0,0,0.35);
-        position:absolute;
-        top:0;
-        left:0;
+    .large-title {
+        font-size: 4.5rem;
+        color:#fff;
+        text-align:center;
+        padding-top:30vh;
+        margin-bottom: .125em;
+    }
+
+    .content {
+        width:32.5vw;
+        color: $lightGrey;
+        margin: 0 auto;
+        text-align:center;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.4rem;
+        line-height: 1.75;
+
+        .light {
+            color: #fff;
+        }
+    }
+
+    .divider {
+        width: 27.5vw;
+        background-color: #fff;
+        opacity: .17;
+        height: 1.5px;
+        margin: 2em auto;
+    }
+
+    .social-icon-list {
+        display:flex;
+        list-style:none;
+        justify-content: center;
+        align-items:center;
+
+        .social-icon-container {
+            margin: 0 .7rem;
+
+            .icon {
+                color: #fff;
+                text-decoration:none;
+                font-size: 1.5rem;
+                transition: color .3s ease-in-out;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
     }
 }
 
@@ -39,8 +90,9 @@ body {
     justify-content: center;
     align-items:center;
     position:fixed;
+    transition: .4s ease-in-out;
 
-    &.scrolled {
+    &.contract {
         background: $darkBg;
         height: 100px;
     }
@@ -53,12 +105,13 @@ body {
             margin: 0 1.5em;
 
             .nav-link {
-                color: #eee;
+                color: #fff;
                 text-transform:uppercase;
                 font-size: 1rem;
                 font-weight: 600;
                 text-decoration:none;
                 letter-spacing: 1px;
+                transition: color .2s ease-in-out;
 
                 &:hover {
                     color: $primary;
