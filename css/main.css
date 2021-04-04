@@ -16,6 +16,15 @@ body {
   background-color: #0D1422;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF347F;
+  border-radius: 999px;
+}
+
 .header {
   height: 100vh;
   width: 100vw;
@@ -35,7 +44,8 @@ body {
   color: #C4C4C4;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: Segoe UI, serif;
+  font-weight: lighter;
   font-size: 1.4rem;
   line-height: 1.75;
 }
@@ -172,7 +182,8 @@ body {
 .section-sub-text {
   color: #C4C4C4;
   text-align: center;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: Segoe UI, serif;
+  font-weight: lighter;
   font-size: 1.4rem;
   line-height: 1.75;
 }
@@ -255,7 +266,8 @@ body {
 
 #projects .project .content .project-desc {
   color: #C4C4C4;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: Segoe UI, serif;
+  font-weight: lighter;
   font-size: 1.2rem;
   line-height: 1.75;
   width: 70%;
@@ -347,9 +359,17 @@ body {
 }
 
 #projects .project.reversed .content .button-group {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#projects .project.reversed .content .button-group .btn:last-of-type {
+  margin-right: 1em;
 }
 
 #projects .project.reversed .image-section .project-img {
@@ -391,7 +411,7 @@ body {
 }
 
 .btn.primary:hover {
-  background: #ff015f;
+  background: rgba(255, 52, 127, 0.7);
 }
 
 .btn.primary-outline {
@@ -402,5 +422,90 @@ body {
 .btn.primary-outline:hover {
   background: #FF347F;
   color: #fff;
+}
+
+#skills {
+  height: 95vh;
+  width: 100vw;
+  position: relative;
+  background: #121b2c;
+  overflow: hidden;
+}
+
+#skills .background {
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#skills .background .pill-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-column-gap: 5vw;
+          column-gap: 5vw;
+  row-gap: 10vh;
+  position: absolute;
+  left: -10vw;
+  top: 10vh;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+#skills .background .pill-grid .pill {
+  width: 25vw;
+  height: 150px;
+  background-color: #0D1422;
+  border-radius: 999px;
+  z-index: 0;
+  opacity: .15;
+}
+
+#skills .background .pill-grid .pill:nth-child(2n) {
+  background-color: #FF347F;
+  opacity: .05;
+}
+
+#skills .content {
+  z-index: 2;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 5vh;
+}
+
+#skills .content .skills-grid {
+  width: 60vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+  height: 60vh;
+  margin: 3em auto 0 auto;
+}
+
+#skills .content .skills-grid .skill-box {
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(143, 143, 143, 0.5) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: .25;
+  z-index: 2;
+  position: relative;
+  border-radius: 5px;
+}
+
+#skills .content .skills-grid .skill-box .watermark {
+  opacity: .5;
+  font-size: 8rem;
+  position: absolute;
+  top: .35em;
+  right: .35em;
 }
 /*# sourceMappingURL=main.css.map */
