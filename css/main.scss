@@ -455,20 +455,53 @@ body {
             margin: 3em auto 0 auto;
 
             .skill-box {
-                background: -webkit-linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(143,143,143,.5) 100%);
+                background: -webkit-linear-gradient(180deg, rgba(255,255,255,.15) 0%, rgba(143,143,143,.15) 100%);
                 width:100%;
                 height:100%;
-                opacity: .25;
                 z-index: 2;
                 position:relative;
                 border-radius:5px;
+                transform-style: preserve-3d;
+                transform: perspective(1000px);
+                backdrop-filter:blur(10px);
 
                 .watermark {
-                    opacity: .5;
+                    opacity: .15;
                     font-size: 8rem;
                     position:absolute;
                     top: .35em;
                     right: .35em;
+                }
+
+                .skill-box-title {
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    text-align:center;
+                    margin: 3em 0 2em 0;
+                    filter: brightness(20);
+                    transform: translateZ(20px);
+                }
+
+                .skills-list {
+                    list-style:none;
+                    display:flex;
+                    flex-direction: column;
+                    align-items:center;
+                    transform: translateZ(20px);
+
+                    .skill-pill {
+                        background: $primary;
+                        padding: 8px 20px;
+                        border-radius: 999px;
+                        color: #fff;
+                        font-size: .9rem;
+                        font-weight: 500;
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 1.5em;
+                        }
+                    }
                 }
             }
         }
