@@ -549,6 +549,16 @@ body {
   color: #fff;
   font-size: .9rem;
   font-weight: 500;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+#skills .content .skills-grid .skill-box .skills-list .skill-pill:hover {
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #skills .content .skills-grid .skill-box .skills-list .skill-pill:not(:last-of-type) {

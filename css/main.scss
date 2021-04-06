@@ -497,6 +497,12 @@ body {
                         color: #fff;
                         font-size: .9rem;
                         font-weight: 500;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            font-size: 1.1rem;
+                            user-select:none;
+                        }
 
                         &:not(:last-of-type) {
                             margin-bottom: 1.5em;
