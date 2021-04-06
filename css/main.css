@@ -507,7 +507,7 @@ body {
 }
 
 #skills .content .skills-grid .skill-box .watermark {
-  opacity: .15;
+  opacity: .2;
   font-size: 8rem;
   position: absolute;
   top: .35em;
