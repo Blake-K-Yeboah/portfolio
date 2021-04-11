@@ -13,10 +13,6 @@ $primary: #FF347F;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
@@ -103,7 +99,7 @@ body {
         bottom: 7.5vh;
         transform:translateX(-50%);
         cursor:pointer;
-        transition: .3s ease-in-out;
+        transition: background .3s ease-in-out, color .3s ease-in-out;
         font-size: 1.075rem;
         padding-top: 4px;
         outline:none;
@@ -127,7 +123,7 @@ body {
     justify-content: center;
     align-items:center;
     position:fixed;
-    transition: .4s ease-in-out;
+    transition: background .4s ease-in-out, height .4s ease-in-out, box-shadow .4s ease-in-out;
     z-index: 3;
 
     &.contract {
@@ -150,6 +146,7 @@ body {
                 font-weight: 600;
                 text-decoration:none;
                 letter-spacing: 1px;
+                cursor:pointer;
                 transition: color .2s ease-in-out;
 
                 &:hover {

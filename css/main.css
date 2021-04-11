@@ -6,10 +6,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
@@ -103,8 +99,8 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+  transition: background .3s ease-in-out, color .3s ease-in-out;
   font-size: 1.075rem;
   padding-top: 4px;
   outline: none;
@@ -133,8 +129,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: background .4s ease-in-out, height .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
+  transition: background .4s ease-in-out, height .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
+  transition: background .4s ease-in-out, height .4s ease-in-out, box-shadow .4s ease-in-out;
+  transition: background .4s ease-in-out, height .4s ease-in-out, box-shadow .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
   z-index: 3;
 }
 
@@ -163,6 +161,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 1px;
+  cursor: pointer;
   -webkit-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out;
 }
