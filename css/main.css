@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -402,6 +401,8 @@ body {
   text-decoration: none;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  border: 0;
+  cursor: pointer;
 }
 
 .btn.primary {
@@ -562,5 +563,74 @@ body {
 
 #skills .content .skills-grid .skill-box .skills-list .skill-pill:not(:last-of-type) {
   margin-bottom: 1.5em;
+}
+
+.contact-form {
+  width: 35vw;
+  margin: 4em auto 6em auto;
+}
+
+.contact-form .form-group {
+  display: block;
+  margin: 2em 0;
+}
+
+.contact-form .form-group.button-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+.contact-form .form-group.form-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+}
+
+.contact-form .form-group label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  padding-bottom: 12px;
+}
+
+.contact-form .form-group .input {
+  width: 100%;
+  padding: 12px;
+  height: 40px;
+  background: #24314A;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+  font-size: .85rem;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+}
+
+.contact-form .form-group .input:focus {
+  border-bottom-color: #FF347F;
+  color: #FF347F;
+}
+
+.contact-form .form-group .input.textarea {
+  min-height: 160px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form .form-group .btn {
+  width: 160px;
+  position: relative;
+  top: -50%;
 }
 /*# sourceMappingURL=main.css.map */
