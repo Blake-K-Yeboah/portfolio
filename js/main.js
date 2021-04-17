@@ -1,3 +1,6 @@
+// AOS
+AOS.init();
+
 // Navbar Scroll Effect
 window.addEventListener("scroll", () => {
    const scrollTop = window.pageYOffset;
@@ -14,13 +17,13 @@ window.addEventListener("scroll", () => {
 });
 
 // GSAP Load In Animations
-gsap.from(".navbar", { opacity: 0, duration: 0.75, y: -100 });
+gsap.from(".navbar", { opacity: 0, duration: 0.5, y: -100 });
 gsap.from(".anim1", {
    opacity: 0,
    duration: 1,
-   stagger: 0.3,
+   stagger: 0.15,
    y: -30,
-   delay: 0.75,
+   delay: 0.5,
 });
 
 // Navigation Links Scroll Animation
@@ -40,29 +43,5 @@ document.querySelector(".scroll-down-btn").addEventListener("click", () => {
       duration: 0.75,
       scrollTo: { y: "#projects", offsetY: 50 },
       ease: "power1",
-   });
-   gsap.from(".section-title", {
-      duration: 0.5,
-      opacity: 0,
-      y: -50,
-      delay: 0.35,
-   });
-   gsap.from(".section-sub-text", {
-      duration: 0.5,
-      opacity: 0,
-      y: -50,
-      delay: 0.5,
-   });
-   gsap.from(".slide-right", {
-      duration: 1,
-      opacity: 0,
-      x: -150,
-      delay: 0.5,
-   });
-   gsap.from(".slide-left", {
-      duration: 1,
-      opacity: 0,
-      x: 150,
-      delay: 0.5,
    });
 });
