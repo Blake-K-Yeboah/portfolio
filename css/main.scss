@@ -397,6 +397,12 @@ body {
             color: lighten($primary, 10%);
         }
     }
+
+    &.extra-space {
+        .icon {
+            margin-right: 10px;
+        }
+    }
 }
 
 // Skills Section Styles
@@ -570,6 +576,118 @@ body {
             width: 160px;
             position: relative;
             top: -50%;
+        }
+    }
+}
+
+// About Section Styling
+#about {
+    min-height: 65vh;
+    width: 100vw;
+    background: #121b2c;
+    padding: .5em 0;
+
+    .about-grid {
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        height: 42.5vh;
+        margin-top: 2em;
+        width: 50vw;
+        margin: 0 auto;
+
+        .img-container {
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items:center;
+            padding-right: 7.5vw;
+
+            .about-img {
+                width: 35%;
+                min-width: 230px;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height:100%;
+            display: flex;
+            align-items:center;
+
+            .text {
+                color: $lightGrey;
+                font-family: Segoe UI, serif;
+                font-weight: lighter;
+                font-size: 1.3rem;
+                line-height: 1.825;
+
+                .light {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// Resume Section Styles
+#resume {
+    height: 40vh;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+
+    div {
+        position:relative;
+        top:45%;
+        transform: translateY(-50%);
+        text-align:center;
+    }
+
+    .section-title {
+        margin: 0;
+    }
+
+    .section-sub-text {
+        padding: 1em 0;
+    }
+
+}
+
+// Footer Styles
+footer {
+    width: 100vw;
+    background: #121b2c;
+    height: 85px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+
+    .footer-text {
+        color: $lightGrey;
+        font-family: Segoe UI, serif;
+        font-weight: lighter;
+        font-size: 1.15rem;
+    }
+
+    .social-icons {
+        display:flex;
+        list-style:none;
+
+        .social-icon-container {
+            margin: 0 .75em;
+
+            .icon {
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: $lightGrey;
+                transition: color .3s ease-in-out;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
         }
     }
 }
